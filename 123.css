@@ -1,0 +1,32 @@
+.painting {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+.painting {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 13px;
+}
+.painting {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+.painting {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 12px solid blueviolet;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+body {
+    background-color: orchid;
+}

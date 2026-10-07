@@ -1,0 +1,250 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #ffb347, #ffcc33, #ff7043);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.95);
+        width: 90%;
+        max-width: 800px;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    h1 {
+        color: #ff5722;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 12px 20px;
+        margin: 8px;
+        border: none;
+        border-radius: 10px;
+        background: #ff5722;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #e64a19;
+        transform: scale(1.05);
+    }
+
+    .recipe-box {
+        text-align: left;
+        background: #fff8f0;
+        padding: 20px;
+        border-radius: 15px;
+        min-height: 250px;
+        border: 2px solid #ffcc80;
+    }
+
+    h2 {
+        color: #ff5722;
+        margin-bottom: 10px;
+    }
+
+    ul, ol {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🍴 My Recipe Book 🍴</h1>
+
+    <div class="buttons">
+        <button onclick="showRecipe('fries')">🍟 Fries</button>
+        <button onclick="showRecipe('pizza')">🍕 Pizza</button>
+        <button onclick="showRecipe('juice')">🍊 Orange Juice</button>
+        <button onclick="showRecipe('salad')">🥗 Salad</button>
+    </div>
+
+    <div class="recipe-box" id="recipe">
+        <h2>Welcome!</h2>
+        <p>Click a food button above to view its recipe.</p>
+    </div>
+</div>
+
+<script>
+function showRecipe(food) {
+    const recipe = document.getElementById("recipe");
+
+    if(food === "fries") {
+        recipe.innerHTML = `
+        <h2>🍟 French Fries</h2>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>3 large Russet potatoes (or baking potatoes)
+2 tablespoons olive oil
+0.5 teaspoon salt
+</li>
+           
+        </ul>
+
+        <h3>How to Make:</h3>
+        <ol>
+            <li>1. Prep the Oven
+Heat the oven to 210°C (425°F).
+Line a large baking sheet with parchment paper. [1, 2, 3]
+
+2. Cut into Fries
+Wash and scrub the potatoes thoroughly.
+Slice the potatoes into long, 1 cm (\(\frac{1}{2}\text{-inch}\)) thick sticks.
+Tip: An adult should supervise or help with the sharp knife during this step. [1, 2, 3, 4, 5]
+3. Soak and Dry [1]
+Soak the potato sticks in a bowl of cold water for 10 minutes to remove excess starch.
+Drain the water and dry the potatoes completely with a clean kitchen towel.
+Note: Drying them thoroughly is the secret to making them truly crispy. [1, 2, 3, 4, 5]
+4. Season and Toss
+•	Place the dry potatoes on the baking sheet.
+•	Drizzle with the olive oil.
+•	Sprinkle the salt and garlic powder over them.
+•	Toss with clean hands until every fry is lightly coated in oil and spices.
+              Spread them out so they do not overlap. [1, 2, 3, 4]5. Bake Until Golden
+Bake for 20 to 25 minutes.
+Use a spatula to flip them halfway through the cooking time.
+Remove them when they are golden brown and crispy at the edges. [1, 2, 3, 4, 5]
+
+
+</li>
+           
+        </ol>
+        `;
+    }
+
+    else if(food === "pizza") {
+        recipe.innerHTML = `
+        <h2>🍕 Pizza</h2>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Pizza For the Dough:
+•	\(1 \frac{1}{3}\) cups warm water (100°F to 110°F)
+•	1 packet (2 \(\frac{1}{4}\) teaspoons) instant yeast
+•	1 tablespoon granulated sugar
+•	\(3 \frac{1}{2}\) to 4 cups unbleached all-purpose flour (or bread flour for extra chew)
+•	2 tablespoons extra-virgin olive oil
+•	1 teaspoon salt [1]
+For the Sauce & Toppings:
+•	1 cup store-bought or homemade pizza sauce (crushed tomatoes with a pinch of salt)
+•	2 cups (8 oz) shredded low-moisture mozzarella cheese
+•	1 tablespoon olive oil (for brushing the crust)
+•	Optional: Pepperoni, fresh basil, sliced bell peppers, or onions [1]
+dough</li>
+            
+        </ul>
+
+        <h3>How to Make:</h3>
+        <ol>
+            <li>1. Make the Dough
+In a large bowl, whisk the warm water, sugar, and yeast together. Let it sit for 5 minutes until it becomes frothy. Add the flour, olive oil, and salt. Mix until the dough forms a cohesive, slightly sticky ball. [1, 2, 3, 4]
+2. Knead and Rise
+Knead the dough on a lightly floured surface for 5 to 7 minutes until it is smooth and elastic. Lightly oil a large bowl, place the dough inside, cover it with a warm towel or plastic wrap, and let it rise in a warm spot for 1 to 1.5 hours, or until it has doubled in size. [1, 2, 3, 4]
+3. Shape the Pizza
+Preheat your oven to 475°F (245°C). If using a pizza stone, preheat it with the oven. Punch down the dough to release air bubbles, then divide it in half (this recipe makes two 12-inch pizzas). On a lightly floured surface, stretch or roll the dough out to your desired thickness. [1, 2, 3]
+4. Assemble and Bake
+Transfer the dough to a parchment-lined or greased baking sheet. Brush the edges with a little olive oil. Spread a thin layer of sauce—leaving a half-inch border for the crust—top with mozzarella cheese, and add your toppings. Bake for 12 to 15 minutes, or until the crust is golden-brown and the cheese is bubbly. [1, 2, 3, 4, 5]
+</li>
+            
+        </ol>
+        `;
+    }
+
+    else if(food === "juice") {
+        recipe.innerHTML = `
+        <h2>🍊 Orange Juice</h2>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>4 fresh oranges</li>
+            <li>Ice cubes</li>
+            <li>Sugar (optional)</li>
+            <li>•	3 to 4 large oranges (such as Valencia or Navel oranges)
+•	A citrus juicer (hand-press or electric)
+<li>
+        </ul>
+
+        <h3>How to Make:</h3>
+        <ol>
+            <li>1. Warm the Oranges
+•	Roll the oranges firmly against the kitchen counter with the palm of your hand for 10 seconds.
+•	Tip: This loosens the juices inside and makes them much easier to squeeze. [1, 2, 3, 4, 5]
+
+2. Cut in Half
+•	Have an adult help you slice each orange horizontally right across the middle.
+
+3. Juice the Fruit
+•	Press the flat, cut side of the orange down onto the juicer cone.
+•	Twist it back and forth firmly until all the juice and pulp drop into the reservoir below.
+•	Repeat this step for all of the orange halves. [1]
+
+4. Strain the Pulp (Optional)
+•	If you like smooth juice, place a fine-mesh strainer over your serving glass.
+•	Pour the juice through the strainer to catch the stringy pulp.
+•	If you like pulp, simply skip this step and pour it straight into the glass. [1, 2, 3, 4, 5]
+•	
+</li>
+            
+        </ol>
+        `;
+    }
+
+    else if(food === "salad") {
+        recipe.innerHTML = `
+        <h2>🥗 Salad</h2>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>•	1/2 head white cabbage, finely shredded
+•	3 large carrots, peeled and grated
+•	1/2 cup sweet corn, drained
+•	1/2 cup green peas, drained
+•	1/2 cup baked beans
+•	1/4 cup kidney beans, rinsed
+•	1 large cucumber, peeled, deseeded, and diced
+•	3-4 hard-boiled eggs, sliced
+•	1/2 tin corned beef (optional)
+•	Salad cream or mayonnaise </li>
+            
+        </ul>
+
+        <h3>How to Make:</h3>
+        <ol>
+            <li>1.	Soak shredded cabbage in lightly salted water for 10 minutes to soften, then drain completely.
+2.	In a large serving bowl, build your salad in layers: start with cabbage, followed by carrots, and then lettuce.
+3.	Add layers of cucumbers, sweet corn, green peas, kidney beans, and baked beans.
+4.	Top the bowl with sliced hard-boiled eggs and (if using) flaked corned beef.
+5.	Refrigerate until chilled. Pour over your creamy dressing just before serving. [1, 2, 3, 4, 5]
+
+</li>
+          
+        </ol>
+        `;
+    }
+}
+</script>
+
+</body>
+</html>
